@@ -33,18 +33,15 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
-
-.header__logo-box {
+.header .header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-
-.header__logo {
+.header .header__logo-box .header__logo {
   height: 3.5rem;
 }
-
-.header__text-box {
+.header .header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -58,16 +55,14 @@ body {
   backface-visibility: hidden;
   margin-bottom: 5rem;
 }
-
-.heading-primary--main {
+.heading-primary .heading-primary--main {
   display: block;
   font-weight: 400;
   font-size: 6rem;
   letter-spacing: 3.5rem;
   animation: moveInRight 1s ease-out;
 }
-
-.heading-primary--sub {
+.heading-primary .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -111,8 +106,7 @@ body {
     transform: translate(0);
   }
 }
-.btn:link,
-.btn:visited {
+.btn:visited, .btn:link {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
@@ -130,17 +124,18 @@ body {
   background-color: white;
   color: #777;
 }
+.btn--white::after {
+  background-color: white;
+}
 
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.3rem);
 }
-
 .btn:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.1rem);
 }
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -153,11 +148,6 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
-
-.btn--white::after {
-  background-color: white;
-}
-
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
