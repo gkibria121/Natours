@@ -51,6 +51,29 @@ body {
   position: relative;
 }
 
+.heading-secondary {
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -123,10 +146,15 @@ body {
   animation-fill-mode: backwards;
 }
 
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
 .row {
   max-width: 110rem;
   margin: 0 auto;
-  background-color: #cccccc;
 }
 .row::after {
   content: "";
@@ -137,7 +165,6 @@ body {
   margin-bottom: 8rem;
 }
 .row [class^=col-] {
-  background-color: red;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
