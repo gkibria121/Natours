@@ -125,7 +125,7 @@ body {
     font-size: 1.4rem;
     transition: all 0.2s;
     position: relative;
-    animation : moveInBottom 0.75s ease-out 3s;
+    animation : moveInBottom 0.75s ease-out 2s;
     animation-fill-mode: backwards;
 }
 .btn--white{
