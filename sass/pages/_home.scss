@@ -22,10 +22,43 @@
  
 }
 
-.section__stories{
+.section-stories{
     padding: 15rem 0; 
     position: relative;
    
-
  
 }
+
+.section-book{
+    padding: 15rem 0;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, $color-primary-light , $color-primary-dark  );
+}
+
+.book{
+    width: 100%;
+    height: 50rem;
+    background-image:  url(../img/nat-10.jpg);
+    background-size: cover;
+    position: relative; 
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &__form{
+        position: absolute;
+        z-index: 10;
+        width: 50%;
+        padding: 6rem;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-white,.9);
+        clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+    }
+}
+ 
