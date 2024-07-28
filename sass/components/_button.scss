@@ -50,12 +50,12 @@
 }
 .btn-text {
     &:link, &:visited {
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         text-decoration: none;
         color: $color-primary-dark;
         display: inline-block;
-        border-bottom: 1px solid $color-primary-dark;
-        padding: 3px;
+        border-bottom: 1px solid $color-primary-light;
+        padding: 5px;
 
         
     }
