@@ -182,6 +182,7 @@ body {
   display: inline-block;
   border-bottom: 1px solid #55c57a;
   padding: 5px;
+  transition: all 0.3s;
 }
 .btn-text:hover {
   background-color: #28b485;
@@ -331,12 +332,36 @@ body {
   clip-path: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(12deg);
+  position: relative;
 }
 .story__img {
   height: 100%;
+  transform: scale(1.4);
+  transition: all 0.5s;
 }
 .story__text {
   transform: skewX(12deg);
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  transform: translate(-50%, 0);
+  transition: all 0.5s;
+  opacity: 0;
+  backface-visibility: hidden;
+}
+.story:hover .story__caption {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.story:hover .story__img {
+  transform: scale(1);
+  filter: blur(3px) brightness(90%);
 }
 
 .composition {
