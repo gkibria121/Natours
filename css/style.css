@@ -305,10 +305,11 @@ body {
   border-bottom: 1px solid #c7c7c7;
 }
 .card__cta {
-  position: absolute;
   width: 90%;
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   transform: translateX(-50%) translateY(-50%);
   height: fit-content;
   text-align: center;
@@ -358,6 +359,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 1.7rem;
   text-transform: uppercase;
@@ -522,6 +524,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.1s;
 }
@@ -540,13 +543,34 @@ body {
 }
 .popup__content {
   position: absolute;
-  width: 75%;
-  height: 50rem;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
   background-color: white;
+  display: table;
+}
+.popup__left {
+  width: 33.3333333333%;
+  display: table-cell;
+}
+.popup__right {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+.popup__img {
+  width: 100%;
+  display: block;
+}
+.popup__text {
+  column-count: 2;
+  column-rule: 1px solid #5f5f5f;
+  column-gap: 4rem;
+  font-size: 1.6rem;
+  hyphens: auto;
 }
 
 .section-about {
@@ -751,6 +775,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .navigation__icon, .navigation__icon::after, .navigation__icon::before {
   display: inline-block;
@@ -787,11 +812,12 @@ body {
   transform: rotate(135deg);
 }
 .navigation__list {
-  position: absolute;
   list-style: none;
+  position: absolute;
   top: 50%;
-  text-align: center;
   left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 .navigation__item {
