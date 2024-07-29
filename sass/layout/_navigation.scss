@@ -93,11 +93,11 @@
         }
 
         &::after {
-            transform: rotate(-45deg);
+            transform: rotate(-135deg);
         }
 
         &::before {
-            transform: rotate(45deg);
+            transform: rotate(135deg);
         }
     }
 
