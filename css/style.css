@@ -721,43 +721,33 @@ body {
   position: absolute;
   list-style: none;
   top: 50%;
+  text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .navigation__item {
-  margin-bottom: 1rem;
-  position: relative;
-  color: #28b485;
-  padding-inline: 1.5rem;
-  overflow: hidden;
-  backface-visibility: hidden;
-}
-.navigation__item:hover .navigation__item::after {
-  background-color: white;
-}
-.navigation__item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  display: inline-block;
-  left: 0;
-  animation: moveArrowInLeft 1s;
-  z-index: -1;
-  width: 150%;
-  height: 100%;
-  transform: translate(-30%);
-  background-color: #000;
-  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
-}
-.navigation__link {
-  overflow: hidden;
+  margin: 1rem;
 }
 .navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   text-decoration: none;
   font-size: 3rem;
   font-weight: 300;
+  padding: 1rem 2rem;
   text-transform: uppercase;
-  color: inherit;
+  color: white;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 250%;
+  transition: all 0.4s;
+}
+.navigation__link:link span, .navigation__link:visited span {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+.navigation__link:hover {
+  background-position: 100%;
+  color: #28b485;
+  transform: translateX(1rem);
 }
 
 /*# sourceMappingURL=style.css.map */
