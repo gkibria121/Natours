@@ -652,11 +652,17 @@ body {
   width: 15rem;
   height: auto;
 }
+.footer__navigation, .footer__copyright {
+  border-top: 2px solid #5f5f5f;
+  padding-top: 1.5rem;
+}
 .footer__list {
   list-style: none;
 }
 .footer__item {
   display: inline;
+}
+.footer__item:not(:last-child) {
   margin-right: 1rem;
 }
 .footer__link:link, .footer__link:visited {
