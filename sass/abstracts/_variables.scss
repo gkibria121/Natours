@@ -9,14 +9,14 @@ $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-$color-grey-dark: #777; 
-$color-grey-dark-1: #5f5f5f; 
-$color-grey-dark-2:#333; 
+$color-grey-dark: #777;
+$color-grey-dark-1: #5f5f5f;
+$color-grey-dark-2: #333;
 
 
-$color-grey-light:#cccccc; 
-$color-grey-light-1:#f7f7f7; 
-$color-grey-light-2:#c7c7c7; 
+$color-grey-light: #cccccc;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #c7c7c7;
 $color-white: white;
 $color-black: #000;
 
@@ -35,17 +35,16 @@ $default-font-size : 1.6rem;
 
 
 //MEDIA QUERY BREAKPOINTS
- 
+
 
 
 $breakpionts : (
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px
-  );
+    sm: 36em, // 576px 
+    md: 48em, // 786px
+    lg: 62em, //  992px
+    xl: 75em, // 1200px
+    xxl: 86.5em, // 1400px
+    sl : 112em // 1800px
+);
 
 $big-desktop : 1800px;
-
- 
