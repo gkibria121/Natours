@@ -472,6 +472,21 @@ body {
   padding-left: 9rem;
   transform: skewX(-12deg);
 }
+@media (max-width: 36em) {
+  .story {
+    width: 100%;
+  }
+}
+@media (max-width: 48em) {
+  .story {
+    transform: skewX(0deg);
+  }
+}
+@media (max-width: 62em) {
+  .story {
+    width: 95%;
+  }
+}
 .story__shape {
   background-color: orangered;
   width: 15rem;
@@ -482,6 +497,11 @@ body {
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
 }
+@media (max-width: 48em) {
+  .story__shape {
+    transform: translateX(-3rem) skewX(0deg);
+  }
+}
 .story__img {
   height: 100%;
   transform: scale(1.4);
@@ -489,6 +509,11 @@ body {
 }
 .story__text {
   transform: skewX(12deg);
+}
+@media (max-width: 48em) {
+  .story__text {
+    transform: skewX(0deg);
+  }
 }
 .story__caption {
   position: absolute;

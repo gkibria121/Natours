@@ -7,6 +7,21 @@
     padding: 6rem;
     padding-left: 9rem;
     transform: skewX(-12deg);
+    @include response-to(sm)
+    {
+        width: 100%;
+    }
+    @include response-to(md)
+    {
+        transform: skewX(0deg);
+        
+    }
+    @include response-to(lg)
+    {
+        width: 95%;
+    }
+
+    
     
     
     &__shape {
@@ -18,6 +33,11 @@
         shape-outside: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+        @include response-to(md)
+        {
+            transform: translateX(-3rem) skewX(0deg);
+            
+        }
         
     }
     &__img{
@@ -27,6 +47,11 @@
     }
     &__text{
         transform: skewX(12deg);
+        @include response-to(md)
+        {
+            transform: skewX(0deg);
+            
+        }
 
     }
 
