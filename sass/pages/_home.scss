@@ -64,7 +64,7 @@
         width: 50%;
         padding: 6rem;
         @include response-to(lg){
-            width: 90%;
+            width: 100%;
             padding: 3rem;
         }
     }
@@ -81,7 +81,8 @@
         clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
         
         @include response-to(lg){
-            clip-path: polygon(0 0, 70% 0, 56% 100%, 0 100%);
+            width: 100%;
+            clip-path: polygon(0 0, 80% 0, 56% 100%, 0 100%);
         }
         @include response-to(md){
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

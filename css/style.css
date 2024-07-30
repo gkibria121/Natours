@@ -885,7 +885,7 @@ body {
 }
 @media (max-width: 62em) {
   .book__form {
-    width: 90%;
+    width: 100%;
     padding: 3rem;
   }
 }
@@ -902,7 +902,8 @@ body {
 }
 @media (max-width: 62em) {
   .book::after {
-    clip-path: polygon(0 0, 70% 0, 56% 100%, 0 100%);
+    width: 100%;
+    clip-path: polygon(0 0, 80% 0, 56% 100%, 0 100%);
   }
 }
 @media (max-width: 48em) {
