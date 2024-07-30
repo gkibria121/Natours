@@ -7,10 +7,22 @@
 }
 
 html {
-    
-    font-size: 62.5%;
 
-    
+    font-size: 62.5%; // 10px
+
+
+
+    @include response-to(xxl) {
+        font-size: 56.26%; // 9px
+    }
+
+    @include response-to(sm) {
+        font-size: 50%; // 8px
+    }
+    @include response-to(sl) {
+        font-size: 75%; // 12px
+    }
+
 }
 
 body {

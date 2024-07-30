@@ -18,7 +18,7 @@
     $breakpoint-value : map-get($breakpionts, $breakpiont);
 
     @if $breakpoint-value >= $big-desktop {
-        @media (max-width : $breakpoint-value ){
+        @media (min-width : $breakpoint-value ){
             @content;
         }
     } @else {

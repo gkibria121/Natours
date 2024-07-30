@@ -9,6 +9,21 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 86.5em) {
+  html {
+    font-size: 56.26%;
+  }
+}
+@media (max-width: 36em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 body {
   box-sizing: border-box;
