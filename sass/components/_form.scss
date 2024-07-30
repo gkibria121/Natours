@@ -14,11 +14,13 @@
         font-family: inherit;
         color: inherit;
         width: 90%;
+        
         border-bottom: 3px solid transparent;
         transition: all .3s;
         margin-bottom: 1rem;
         @include response-to(lg){
-            width: 70%;
+        
+            width: 100%;
         }
         &:focus{
             outline: none;
@@ -53,6 +55,10 @@
         display: inline-block;
         width: 49%;
         margin-top: 4rem;
+        @include response-to(lg){
+            width: 100%;
+            margin-top: 1rem;
+        }
     }
     &__radio-input{
         display: none;
