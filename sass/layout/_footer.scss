@@ -1,11 +1,24 @@
 .footer{
     background-color: $color-grey-dark-2;
-    padding: 20rem 0;
+    padding: 10rem 0;
     font-size: 1.5rem;
+
+    @include response-to(lg){
+        padding: 5rem 0;
+    }
+    @include response-to(md){
+        padding: 3rem 0;
+    }
 
     &__logo-box{
         margin-bottom: 6rem;
         text-align: center;
+        @include response-to(lg){
+            margin-bottom: 5rem
+        }
+        @include response-to(md){
+            margin-bottom: 4rem
+        }
     }
     &__logo{
         width: 15rem;
@@ -22,7 +35,7 @@
         list-style: none;
     }
     &__item{
-        display: inline;
+        display: inline-block;
         &:not(:last-child){
             margin-right: 1rem;
         }

@@ -2,13 +2,26 @@
     max-width: $grid-width ;
     margin: 0 auto;
     @include clearFix;
+
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
+        
+    }
+    @include response-to(lg){
+        max-width: 50rem ;
     }
     [class^="col-"]{
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizantal ;
+
+            @include response-to(lg){
+                margin-right: 0 ;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+        @include response-to(lg){
+            width: 100% !important;
         }
     }
     .col-1-of-2{
