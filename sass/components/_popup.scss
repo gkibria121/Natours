@@ -7,7 +7,16 @@
     height: 100vh;
     background-color: rgba($color-black, .8);
     z-index: 200;
+    font-size: $default-font-size;
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .4s .2s;
 
+    &:target {
+        opacity: 1;
+        visibility: visible
+    }    
 
     &__content{
         @include absCenter;
@@ -16,8 +25,17 @@
         transform: translate(-50%, -50%);
         background-color: $color-white;
         display: table;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .3s .2s;
         
     }
+    &:target &__content {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%);
+    } 
     &__left{
         width: calc(100%/3);
         display: table-cell;
@@ -27,6 +45,8 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem ;
+
+
     }
     &__img{
         width: 100%;
@@ -37,8 +57,27 @@
         column-count: 2;
         column-rule: 1px solid $color-grey-dark-1;
         column-gap: 4rem;
-        font-size: $default-font-size;
+        
         hyphens: auto;
+
+    }
+    &__close{
+
+        &:link,
+        &:visited{
+            position : absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            line-height: 1;
+            color: $color-grey-dark;
+            text-decoration: none;
+        }
+
+        &:hover{
+            color: $color-primary;
+            cursor: pointer;
+        }
 
     }
 }
