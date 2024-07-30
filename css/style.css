@@ -651,7 +651,7 @@ body {
   position: relative;
 }
 .form__input {
-  display: block;
+  display: inline-block;
   padding-inline: 2rem;
   padding-block: 2rem 1rem;
   border-radius: 2px;
@@ -662,6 +662,11 @@ body {
   border-bottom: 3px solid transparent;
   transition: all 0.3s;
   margin-bottom: 1rem;
+}
+@media (max-width: 62em) {
+  .form__input {
+    width: 70%;
+  }
 }
 .form__input:focus {
   outline: none;
@@ -872,6 +877,12 @@ body {
   width: 50%;
   padding: 6rem;
 }
+@media (max-width: 62em) {
+  .book__form {
+    width: 90%;
+    padding: 3rem;
+  }
+}
 .book::after {
   content: "";
   position: absolute;
@@ -882,6 +893,16 @@ body {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+}
+@media (max-width: 62em) {
+  .book::after {
+    clip-path: polygon(0 0, 70% 0, 56% 100%, 0 100%);
+  }
+}
+@media (max-width: 48em) {
+  .book::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 .row {

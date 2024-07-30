@@ -6,7 +6,7 @@
         position: relative;
     }
     &__input{
-        display: block;
+        display: inline-block;
         padding-inline: 2rem; 
         padding-block: 2rem 1rem;
         border-radius: 2px;
@@ -17,7 +17,9 @@
         border-bottom: 3px solid transparent;
         transition: all .3s;
         margin-bottom: 1rem;
-
+        @include response-to(lg){
+            width: 70%;
+        }
         &:focus{
             outline: none;
             border-bottom: 3px solid $color-primary-dark;
