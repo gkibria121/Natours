@@ -886,7 +886,7 @@ body {
 @media (max-width: 62em) {
   .book__form {
     width: 100%;
-    padding: 3rem;
+    padding: 5rem;
   }
 }
 .book::after {
