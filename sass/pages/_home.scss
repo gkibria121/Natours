@@ -51,21 +51,22 @@
 
 .book{
     width: 100%;
-    height: 50rem;
+    // height:  50rem;
     background-image:  url(../img/nat-10.jpg);
     background-size: cover;
     position: relative; 
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &__form{
-        position: absolute;
+        position: relative;
+        
         z-index: 10;
 
         width: 50%;
         padding: 6rem;
         @include response-to(lg){
             width: 100%;
-            padding: 5rem;
+            padding: 4rem ;
         }
     }
     &::after{

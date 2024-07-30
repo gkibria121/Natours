@@ -700,6 +700,7 @@ body {
   .form__radio-group {
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .form__radio-input {
@@ -871,14 +872,13 @@ body {
 
 .book {
   width: 100%;
-  height: 50rem;
   background-image: url(../img/nat-10.jpg);
   background-size: cover;
   position: relative;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .book__form {
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 50%;
   padding: 6rem;
@@ -886,7 +886,7 @@ body {
 @media (max-width: 62em) {
   .book__form {
     width: 100%;
-    padding: 5rem;
+    padding: 4rem;
   }
 }
 .book::after {
