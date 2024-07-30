@@ -1,4 +1,19 @@
-.u-text-center {text-align: center !important;}
-.u-margin-bottom-small {margin-bottom: $default-font-size !important;}
-.u-margin-bottom-medium {margin-bottom: 6rem !important;}
-.u-margin-bottom-big {margin-bottom: 8rem !important;}
+.u-text-center {
+  text-align: center !important;
+
+}
+.u-margin-bottom-small {
+  margin-bottom: $default-font-size !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 6rem !important;
+  @include response-to(lg){
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+  @include response-to(lg){
+    margin-bottom: 5rem !important;
+  }
+}
