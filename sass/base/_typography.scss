@@ -1,7 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    padding: 3rem;
     color: grey;
     line-height: 1.7;
 }
@@ -18,6 +17,24 @@ body {
         font-size: 6rem;
         letter-spacing: 3.5rem;
         animation: moveInRight 1s ease-out;
+
+        @include response-to(xxl){
+            font-size: 5.8rem; 
+            
+        }
+        @include response-to(xl){
+            font-size: 5.5rem;
+        }
+        @include response-to(lg){
+            font-size: 5rem;
+        }
+        @include response-to(md){
+            font-size: 4.5rem;
+            letter-spacing: 1;
+        }
+        @include response-to(sm){
+            font-size: 3.5rem;
+        }
     }
 
     &--sub {
@@ -26,6 +43,19 @@ body {
         font-weight: 400;
         letter-spacing: 1.75rem;
         animation: moveInLeft 1s ease-out;
+        @include response-to(xxl){
+            font-size: 1.8rem;
+            letter-spacing: 1.5rem;
+  
+        }
+        @include response-to(lg){
+            font-size: 1.5rem;
+            letter-spacing: 1.3rem;
+        }
+        @include response-to(sm){
+            font-size: 1rem;
+            letter-spacing: 1;
+        }
     }
 }
 %default-button {
@@ -57,6 +87,14 @@ body {
     letter-spacing: .2rem;
 
     transition: all .2s;
+
+    @include response-to(md){
+        font-size: 3rem;
+    }
+    @include response-to(sm){
+        font-size: 2.5rem;
+    }
+    
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

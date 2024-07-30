@@ -12,7 +12,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+// typgraphy + base > general layout + grid > page layout > componets 
 @mixin response-to($breakpiont){
 
     $breakpoint-value : map-get($breakpionts, $breakpiont);

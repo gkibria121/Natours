@@ -12,6 +12,15 @@
         background-color: $color-white;
         z-index: 102;
         border-radius: 50%;
+
+        @include response-to(lg){
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+        @include response-to(sm){
+            top: 4rem;
+            right: 4rem;
+        }
     }
 
     &__background {
@@ -24,6 +33,15 @@
         right: 6.5rem;
         z-index: 100;
         transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include response-to(lg){
+            top: 4.7rem;
+            right: 4.7rem;
+        }
+        @include response-to(sm){
+            top: 4.2rem;
+            right: 4.2rem;
+        }
     }
 
     &__nav {

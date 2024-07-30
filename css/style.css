@@ -9,14 +9,19 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 48em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+}
 @media (max-width: 86.5em) {
   html {
     font-size: 56.26%;
-  }
-}
-@media (max-width: 36em) {
-  html {
-    font-size: 50%;
   }
 }
 @media (min-width: 112em) {
@@ -27,12 +32,17 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+}
+@media (max-width: 62em) {
+  body {
+    padding: 0;
+  }
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  padding: 3rem;
   color: grey;
   line-height: 1.7;
 }
@@ -50,12 +60,56 @@ body {
   letter-spacing: 3.5rem;
   animation: moveInRight 1s ease-out;
 }
+@media (max-width: 86.5em) {
+  .heading-primary--main {
+    font-size: 5.8rem;
+  }
+}
+@media (max-width: 75em) {
+  .heading-primary--main {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 62em) {
+  .heading-primary--main {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 48em) {
+  .heading-primary--main {
+    font-size: 4.5rem;
+    letter-spacing: 1;
+  }
+}
+@media (max-width: 36em) {
+  .heading-primary--main {
+    font-size: 3.5rem;
+  }
+}
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.75rem;
   animation: moveInLeft 1s ease-out;
+}
+@media (max-width: 86.5em) {
+  .heading-primary--sub {
+    font-size: 1.8rem;
+    letter-spacing: 1.5rem;
+  }
+}
+@media (max-width: 62em) {
+  .heading-primary--sub {
+    font-size: 1.5rem;
+    letter-spacing: 1.3rem;
+  }
+}
+@media (max-width: 36em) {
+  .heading-primary--sub {
+    font-size: 1rem;
+    letter-spacing: 1;
+  }
 }
 
 .btn, .btn:visited, .btn:link {
@@ -82,6 +136,16 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
+}
+@media (max-width: 48em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 36em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -725,6 +789,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
+@media (max-width: 48em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+@media (max-width: 36em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+}
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -792,6 +866,18 @@ body {
   z-index: 102;
   border-radius: 50%;
 }
+@media (max-width: 62em) {
+  .navigation__button {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media (max-width: 36em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
 .navigation__background {
   width: 6.5rem;
   height: 6.5rem;
@@ -802,6 +888,18 @@ body {
   right: 6.5rem;
   z-index: 100;
   transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+@media (max-width: 62em) {
+  .navigation__background {
+    top: 4.7rem;
+    right: 4.7rem;
+  }
+}
+@media (max-width: 36em) {
+  .navigation__background {
+    top: 4.2rem;
+    right: 4.2rem;
+  }
 }
 .navigation__nav {
   position: fixed;
