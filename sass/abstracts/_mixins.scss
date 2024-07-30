@@ -1,15 +1,31 @@
 @mixin clearFix {
-    &::after{
+    &::after {
         content: "";
         display: table;
         clear: both;
     }
 }
 
-@mixin absCenter{
+@mixin absCenter {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+@mixin response-to($breakpiont){
+
+    $breakpoint-value : map-get($breakpionts, $breakpiont);
+
+    @if $breakpoint-value >= $big-desktop {
+        @media (max-width : $breakpoint-value ){
+            @content;
+        }
+    } @else {
+        @media (max-width :  $breakpoint-value ){
+            @content;
+        }
+    }
+
+    
 }

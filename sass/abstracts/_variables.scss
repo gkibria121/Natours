@@ -31,3 +31,21 @@ $gutter-horizantal : 6rem;
 //FONT
 
 $default-font-size : 1.6rem;
+
+
+
+//MEDIA QUERY BREAKPOINTS
+ 
+
+
+$breakpionts : (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+  );
+
+$big-desktop : 1800px;
+
+ 
