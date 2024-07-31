@@ -2,13 +2,23 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "landing page for natours",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "compile:sass" : "sass sass/main.scss css/style.css -w"
+    "devServer" : "live-server",
+    "start": "npm-run-all --parallel compile:sass devServer",
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "build:sass": "sass sass/main.scss css/style.css --style compressed",
+    "prefix:css": "postcss css/style.css --use autoprefixer -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.min.css --style compressed",
+    "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0",
     "sass": "^1.77.8"
   }
 }

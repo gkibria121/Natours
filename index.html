@@ -24,19 +24,19 @@
       <div class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01</span> About Natours</a>
+            <a href="#section-about" class="navigation__link" onclick="navTo('#section-about')"><span>01</span>About Natours</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>02</span>Your benefits</a>
+            <a href="#section-featurs" class="navigation__link" onclick="navTo('#section-about')"><span>02</span>Your benefits</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+            <a href="#section-tours" class="navigation__link" onclick="navTo('#section-about')"><span>03</span>Popular tours</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+            <a href="#section-stories" class="navigation__link" onclick="navTo('#section-about')"><span>04</span>Stories</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Book Now</a>
+            <a href="#section-book" class="navigation__link" onclick="navTo('#section-about')"><span>05</span>Book Now</a>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@
       </div>
     </header>
     <main>
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-text-center u-margin-bottom-big">
           <h2 class="heading-secondary">Exciting tour for adventurous people</h2>
         </div>
@@ -82,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="section-featurs">
+      <section class="section-featurs" id="section-featurs">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -210,7 +210,7 @@
           <a href="#" class="btn btn--primary-light btn--animated">discover all tours</a>
         </div>
       </section>
-      <section class="section-stories">
+      <section class="section-stories" id="section-stories">
         <div class="bg-video">
           <video class="bg-video" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -257,14 +257,14 @@
           <a href="#" class="btn-text">Read more stories &rarr;</a>
         </div>
       </section>
-      <section class="section-book">
+      <section class="section-book" id="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
               <div class="u-margin-bottom-medium">
                 <h2 class="heading-secondary">start booking now</h2>
               </div>
-              <form action="#" class="form">
+              <form action="#" class="form" id="booking-form">
                 <div class="form__group">
                   <input type="text" id="name" class="form__input" placeholder="Full Name" required />
                   <label for="name" class="form__label">Full Name</label>
@@ -327,16 +327,16 @@
     </footer>
     
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup" >
 
-      <div class="popup__content">
+      <div class="popup__content" id="popup-content">
         <div class="popup__left">
           <img src="img/nat-8.jpg" alt="Photo tour" class="popup__img">
           <img src="img/nat-9.jpg" alt="Photo tour" class="popup__img">
 
         </div>
         <div class="popup__right">
-          <a class="popup__close" href="#section-torus">
+          <a class="popup__close" id="popup-close" href="#section-torus">
             &times;
           </a>
           <h2 class="heading-secondary u-margin-bottom-small">
@@ -347,41 +347,11 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nihil aperiam reprehenderit odio delectus illo laudantium earum, incidunt amet, facere nulla nesciunt exercitationem voluptate dicta nostrum! Inventore nihil vel quos!
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nihil aperiam reprehenderit odio delectus illo laudantium earum, incidunt amet, facere nulla nesciunt exercitationem voluptate dicta nostrum! Inventore nihil vel quos!
           </p>
-          <a href="#" class="btn btn--primary-light">Book Now</a>
+          <a href="#section-book" class="btn btn--primary-light">Book Now</a>
         </div>
         
       </div>
     </div>
-
-    <!-- <section class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">Col 1 Of 2</div>
-        <div class="col-1-of-2">Col 1 Of 2</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">Col 1 Of 3</div>
-        <div class="col-1-of-3">Col 1 Of 3</div>
-        <div class="col-1-of-3">Col 1 Of 3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">Col 1 Of 3</div>
-        <div class="col-2-of-3">Col 2 Of 3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 Of 4</div>
-        <div class="col-1-of-4">Col 1 Of 4</div>
-        <div class="col-1-of-4">Col 1 Of 4</div>
-        <div class="col-1-of-4">Col 1 Of 4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 Of 4</div>
-        <div class="col-1-of-4">Col 1 Of 4</div>
-        <div class="col-2-of-4">Col 2 Of 4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">Col 1 Of 4</div>
-        <div class="col-3-of-4">Col 3 Of 4</div>
-      </div>
-    </section> -->
   </body>
+  <script src="js/index.js"></script>
 </html>
