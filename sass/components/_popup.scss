@@ -13,6 +13,12 @@
     backface-visibility: hidden;
     transition: all .3s;
 
+    @supports(-webkit-backdrop-filter: blur(100x) ) or (backdrop-filter: blur(10px)){
+        -webkit-backdrop-filter: blur(100x);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .4);
+    }
+
     &:target {
         opacity: 1;
         visibility: visible
