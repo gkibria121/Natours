@@ -650,6 +650,11 @@ body {
   margin-bottom: 2rem;
   position: relative;
 }
+@media (max-width: 62em) {
+  .form__group:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
 .form__input {
   display: inline-block;
   padding-inline: 2rem;
@@ -700,7 +705,7 @@ body {
   .form__radio-group {
     width: 100%;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
 .form__radio-input {
@@ -886,7 +891,7 @@ body {
 @media (max-width: 62em) {
   .book__form {
     width: 100%;
-    padding: 4rem;
+    padding: 5rem 7rem 5rem 7rem;
   }
 }
 .book::after {

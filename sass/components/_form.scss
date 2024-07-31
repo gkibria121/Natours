@@ -5,6 +5,15 @@
     &__group{
         margin-bottom: 2rem;
         position: relative;
+
+        &:not(:last-child){
+            @include response-to(lg){
+        
+                margin-bottom: 4rem;
+            
+            }
+        }
+
     }
     &__input{
         display: inline-block;
@@ -60,7 +69,7 @@
         @include response-to(lg){
             width: 100%;
             margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
         }
     }
     &__radio-input{
