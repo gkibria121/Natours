@@ -38,19 +38,50 @@
     } 
     &__left{
         width: calc(100%/3);
+        
         display: table-cell;
+        @include response-to(xl){
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .15;
+            z-index: 19;
+            overflow: hidden;
+        }
+        @include response-to(md){
+            display: none;
+        }
          
     }
     &__right{
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem ;
+        position: relative;
+        z-index: 20;
+
+        @include response-to(xl){
+            padding: 2rem 4rem;
+        }
 
 
     }
     &__img{
         width: 100%;
         display: block;
+
+        @include response-to(xl){
+            &:not(:first-child){
+                display: none;
+            }
+
+            &:first-child{
+                background-position: center;
+            }
+           
+        }
 
     }
     &__text{
